@@ -1,0 +1,71 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\Public\Documents\Altium\SimpleLDOConverter\PCB1.PcbDoc
+Date     : 12-10-2025
+Time     : 9.44.14 AM
+
+WARNING: Design contains shelved or modified (but not repoured) polygons. The result of DRC is not correct. Recommended to restore/repour all polygons and proceed with DRC again
+   Polygon named: GND_L02_P001 On Top Layer
+
+Processing Rule : Clearance Constraint (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Un-Routed Net Constraint: Net GND Between Via (4685.039mil,2559.055mil) from Top Layer to Bottom Layer And Pad J2-2(4783.465mil,2627.953mil) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (4133.858mil,2578.74mil) from Top Layer to Bottom Layer And Via (4232.283mil,2480.315mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (4133.858mil,2578.74mil) from Top Layer to Bottom Layer And Via (4311.024mil,2598.425mil) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (4232.283mil,2480.315mil) from Top Layer to Bottom Layer And Via (4685.039mil,2559.055mil) from Top Layer to Bottom Layer 
+Rule Violations :4
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+   Violation between Modified Polygon: Polygon Not Repour After Edit  (GND_L02_P001) on Bottom Layer 
+Rule Violations :1
+
+Processing Rule : Width Constraint (Min=10mil) (Max=19.685mil) (Preferred=11.811mil) (All)
+Rule Violations :0
+
+Processing Rule : Routing Topology Rule(Topology=Shortest) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=1mil) (Max=100mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=10mil) (All),(All)
+   Violation between Minimum Solder Mask Sliver Constraint: (9.78mil < 10mil) Between Pad U1-2(4358.268mil,2598.425mil) on Top Layer And Via (4311.024mil,2598.425mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [9.78mil]
+Rule Violations :1
+
+Processing Rule : Silk To Solder Mask (Clearance=10mil) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+   Violation between Net Antennae: Via (4232.283mil,2480.315mil) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (4311.024mil,2598.425mil) from Top Layer to Bottom Layer 
+Rule Violations :2
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+PCB Health Issue Category : Shelved/Modified Polygons
+   Shelved/Modified Polygon: Polygon Not Repour After Edit  (GND_L02_P001) on Bottom Layer (4399.606mil,2588.583mil)
+Issues :1
+
+PCB Health Issue Category : Zero Area Polygons
+   Zero area polygon: Polygon Not Repour After Edit  (GND_L02_P001) on Bottom Layer (4399.606mil,2588.583mil)
+Issues :1
+
+
+Violations Detected : 8
+Waived Violations : 0
+PCB Health Issues : 2
+Time Elapsed        : 00:00:00
