@@ -37,3 +37,30 @@ PCB Top View <img width="1089" height="533" alt="image" src="https://github.com/
 ## PCB 3d Preview
 PCB Top View <img width="987" height="491" alt="image" src="https://github.com/user-attachments/assets/de999a83-e60a-4d3a-aa13-035497fa2033" />
 
+## Design Decisions 
+
+- Choose MIC5317 for its low dropout voltage and stable operation at low load currents.
+
+- 1 µF input and output capacitors were selected as per datasheet recommendations to ensure stability and minimize output noise.
+
+- Short trace lengths were maintained between the regulator and output capacitor to reduce transient response issues.
+
+- Ground plane continuity was prioritized to minimize noise and improve thermal performance.
+
+- Connector placement was optimized for easy integration into embedded prototype boards.
+
+ ## ⚠️ Known Limitations & Future Improvements 
+
+- As a linear regulator, efficiency drops significantly when stepping down from 5V to 3.3V at higher load currents.
+
+- Thermal performance may degrade under continuous high-current operation.
+
+- No EMI filtering is included beyond basic decoupling.
+
+- Future iteration ideas:
+
+  - Replace LDO with a buck converter for higher efficiency
+
+  - Add thermal vias under the regulator
+
+  - Include optional EMI filtering on input/output
